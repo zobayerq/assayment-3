@@ -30,27 +30,89 @@
 
 <body  >
     <header class="p-5">
-        <nav></nav>
-
-        <!-- benar part -->
-        <section>
-            <div class="container mx-auto mt-24  relative">
-                <div class="bg-[url(Images/1.png)] h-52 rounded-xl lg:h-[550px] bg-cover bg-center relative">
-                    <div class=" flex  text-white space-x-4 absolute bottom-5 right-[39%] lg:bottom-8 lg:left-8">
-                        <div class=" bg-black rounded-full items-center  flex h-10 w-10 justify-center "><i class="fa-solid fa-angle-left  text-lg"></i></div>
-                        <div class=" bg-black rounded-full items-center  flex h-10 w-10 justify-center "><i class="fa-solid fa-angle-right  text-lg"></i></div>
-                        
+        <nav class="container"> 
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-
-
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-[#424247]">
+                        <li class="or"><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass text-2xl pr-6 text-[#89898b] "></i></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="or">’</span>s</a>
                 </div>
-                <div class="w-[100%] mt-4 lg:w-[502px] p-8 bg-black text-white rounded-2xl lg:absolute bottom-8 right-8">
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#424247]  ">
+                    <li class="or"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass text-2xl pr-6 text-[#89898b] hidden lg:block"></i>
+                  <a class="b-or text-white font-bold text-lg lg:text-xl px-4 py-2 lg:px-6 lg:py-4 rounded-lg cursor-pointer">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+
+       
+
+        <!-- benar reples -->
+        <section class="container relative mx-auto mt-7 lg:mt-14">
+            <div class=" carousel w-full">
+                <!-- slide1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="flex  text-white space-x-4 absolute bottom-5 right-[39%] lg:bottom-8 lg:left-8">
+                    <a href="#slide4" class="btn btn-circle bg-black border-none text-white"><i class="fa-solid fa-angle-left  text-lg"></i></a> 
+                    <a href="#slide2" class="btn btn-circle  bg-black border-none text-white"><i class="fa-solid fa-angle-right  text-lg"></i></a>
+                  </div>
+                </div> 
+
+                <!-- slide2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/benar 2.jpg" class="w-full" />
+                    <div class="flex  text-white space-x-4 absolute bottom-5 right-[39%] lg:bottom-8 lg:left-8">
+                      <a href="#slide1" class="btn btn-circle bg-black border-none text-white"><i class="fa-solid fa-angle-left  text-lg"></i></a> 
+                      <a href="#slide3" class="btn btn-circle  bg-black border-none text-white"><i class="fa-solid fa-angle-right  text-lg"></i></a>
+                    </div>
+                  </div> 
+  
+                <!-- slide -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images//benar 3.jpg" class="w-full" />
+                    <div class="flex  text-white space-x-4 absolute bottom-5 right-[39%] lg:bottom-8 lg:left-8">
+                      <a href="#slide2" class="btn btn-circle bg-black border-none text-white"><i class="fa-solid fa-angle-left  text-lg"></i></a> 
+                      <a href="#slide4" class="btn btn-circle  bg-black border-none text-white"><i class="fa-solid fa-angle-right  text-lg"></i></a>
+                    </div>
+                  </div> 
+
+
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/benar 4.jpg" class="w-full" />
+                    <div class="flex  text-white space-x-4 absolute bottom-5 right-[39%] lg:bottom-8 lg:left-8">
+                      <a href="#slide3" class="btn btn-circle bg-black border-none text-white"><i class="fa-solid fa-angle-left  text-lg"></i></a> 
+                      <a href="#slide1" class="btn btn-circle  bg-black border-none text-white"><i class="fa-solid fa-angle-right  text-lg"></i></a>
+                    </div>
+                  </div> 
+              </div>
+              <div class="w-[100%] mt-4 lg:w-[502px] p-8 bg-black text-white rounded-2xl lg:absolute bottom-8 right-8">
                 <h3 class="mb-4 text-2xl font-extrabold  ">Meet all the heroes from the field</h3>
                 <p class="text-[#a1a1a3] font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
                 </div>
-              
-            </div>
+    
         </section>
+
+       
 
 
 
@@ -343,6 +405,86 @@
         </section>
 
 
+
+
+         <section>
+            <div class=" container mx-auto">
+                <div class="flex flex-col justify-center items-center border-t border-b  py-8 border-dashed  lg:mt-24 lg: mb-12">
+                    <h4 class=" text-2xl lg:text-4xl font-extrabold">Clients Question</h4>
+                    <p class="text-[#a1a1a3] font-medium max-w-[607px] text-center mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+                </div>
+                <div class="">
+             <div class=" lg:flex lg:justify-between p-8 border rounded-2xl ">
+                       <div class=" w-full lg:h-[470px] lg:w-[900px] lg:pr-10   "> <img src="Images/11.png" alt="" class=" w-full lg:h-[470px] lg:w-[900px]"></div>
+              
+              <div class=" w-full ">
+                <div class="collapse collapse-plus  border-b rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-bold h-20 flex items-center">
+                    <p>Our Equipment</p>
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b rounded-none">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold h-20 flex items-center">
+                    Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b rounded-none">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold h-20 flex items-center">
+                    Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-plus border-b rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-bold h-20 flex items-center">
+                    Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-plus border-b rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-bold h-20 flex items-center">
+                    Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b rounded-none">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-bold h-20 flex items-center">
+                    Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+              
+              
+              
+                        
+                      </div>
+                </div>
+
+            </div>
+         </section>
+
         <section>
             <div class="container mx-auto lg:mt-24 mt-5">
                 <div class="flex flex-col justify-center items-center border-t border-b  py-8 border-dashed ">
@@ -401,6 +543,23 @@
         
                 </div>
                </div>
+
+                    <!-- socal icon -->
+                    <div class="flex flex-col justify-center items-center mt-12 p-9 rounded-xl bg-[#f8f8f8] ">
+                        <div class="text-2xl font-extrabold">
+                            Social Media
+                        </div>
+                        <div class="icn flex items-center text-2xl gap-7 mt-6"> 
+                            <i class="fa-brands fa-twitter "></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    
+
+
+
             </div>
         </section>
         
